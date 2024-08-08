@@ -1,0 +1,9 @@
+{
+  "test_server": {
+    "host": "https://pokeapi.co"
+  },
+  "api_information": {
+    "pokemon_path": "/api/v2/pokemon/",
+    "pokemon_item_path": "/api/v2/item/"
+  }
+}
