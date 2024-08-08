@@ -40,8 +40,8 @@ def test_03_confirm_the_pokemon_list_order_by_id():
         pockmon_name = controller.get_pockmon_name(controller.get_the_API_data(api_url))
         pockmon_type = controller.get_pockmon_type(controller.get_the_API_data(api_url))
         print("")
-        print('id: ' + str(pockmon_id) + ', Pockmon Name: ' + pockmon_name + ', Types: ' + str(pockmon_type))
-        pokemon_list.append({"Id": pockmon_id, "name": pockmon_name, "type": pockmon_type})
+        print('Id: ' + str(pockmon_id) + ', Pockmon Name: ' + pockmon_name + ', Types: ' + str(pockmon_type))
+        pokemon_list.append({"id": pockmon_id, "name": pockmon_name, "type": pockmon_type})
 
     assert pokemon_list == sorted(pokemon_list, key=lambda x: x['id'])
 
